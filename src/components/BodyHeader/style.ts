@@ -3,65 +3,91 @@ import px2vw from "../../utils/px2vw";
 
 import { GitHubButton } from "../Header/style";
 
-export Container = styled.div`
-    width: 100vw;
+export const Container = styled.div`
+    width: 99vw;
     height: 95vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('https://cio.com.br/wp-content/uploads/2019/11/shutterstock_1445888471.jpg');
+
+    background:
+        linear-gradient(
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url(https://cio.com.br/wp-content/uploads/2019/11/shutterstock_1445888471.jpg);
+        background-size: cover;
+    }
+
 `;
 
-export Name = styled.span`
+export const Name = styled.h1`
     margin-bottom: ${px2vw(10)};
-    font-family: 'Sacramento';
+    font-family: 'Sacramento' !important;
+    font-size: calc(3rem + 28 * ((100vw - 414px)/ 1266));
+    line-height: calc(3.5rem + 24 * ((100vw - 414px)/ 1266));
+    margin-bottom: calc(1rem + 8 * ((100vw - 414px)/ 1266));
+    color: white;
+    text-shadow: 1px 1px black;
+`;
+
+export const Description = styled.span`
+    color: white;
     font-size: 1.5rem;
-    color: white;
-`;
-
-export Description = styled.span`
-    color: white;
-    font-size: 1rem;
     margin-bottom: ${px2vw(5)};
+    text-shadow: 1px 1px black;
 `;
 
-export SubDescription = styled(Description)`
-    font-size: 0.9rem;
-    margin-bottom: ${px2vw(10)};
+export const SubDescription = styled(Description)`
+    font-size: 1.3rem;
+    margin-bottom: calc(1rem + 8 * ((100vw - 414px)/ 1266));
 `;
 
-export SeeMoreButton = styled(GutHubButton)`
-    width: ${px2vw(80)};
-    height: 4vh;
+export const SeeMoreButton = styled(GitHubButton)`
+    width: ${px2vw(120)};
+    height: 8vh;
+
+    &:hover {
+        background: rgba(30,150,40,1);
+    }
 `;
 
-export SeeMoreArrowContainer = styled.div`
+export const SeeMoreArrowContainer = styled.div`
     bottom: 1.5rem;
-    position: absolute;    
+    position: absolute;
     left: calc(50% - 24px);
 `;
 
-export SeeMoreAnimation = keyframes`
+export const SeeMoreAnimation = keyframes`
     0% {
-        margin: ${px2vw(0)};
+        padding: ${px2vw(0)} 0 0 0;
     }
     25% {
-        bottom: ${px2vw(2)};
+        padding: ${px2vw(4)} 0 0 0;
     }
     50% {
-        bottom: ${px2vw(4)};
+        padding: ${px2vw(8)} 0 0 0;
     }
     75% {
-        bottom: ${px2vw(2)};
+        padding: ${px2vw(4)} 0 0 0;
     }
     100% {
-        bottom: ${px2vw(0)};
+        padding: ${px2vw(0)} 0 0 0;
     }
 `;
 
-export SeeMoreArrow = styled.img`
+export const SeeMoreArrow = styled.img`
     width: ${px2vw(20)};
     height: ${px2vw(20)};
-    animation: ${SeeMoreAnimation};
+    animation-name: ${SeeMoreAnimation};
+    animation-iteration-count: infinite;
     animation-duration: 1.5s;
+    transition: 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        width: ${px2vw(24)};
+        height: ${px2vw(24)};
+    }
 `;

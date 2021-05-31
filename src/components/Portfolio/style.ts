@@ -3,33 +3,37 @@ import px2vw from "../../utils/px2vw";
 
 export const Container = styled.div`
     width: 100vw;
-    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     background: black;
+    flex-direction: column;
 `;
 
 export const TitleContainer = styled.div`
     display: flex;
+    flex-direction: column;
+    width: 60vw;
     justify-content: left;
     align-items: left;
 `;
 
 export const Title = styled.span`
-    font-family: 'sacramento';
+    font-family: 'Sacramento' !important;
     color: yellow;
-    font-size: 1.2rem;
+    font-size: 4rem;
 `;
 
 export const SubTitle = styled.span`
     margin: ${px2vw(10)} 0 ${px2vw(20)} 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: white;
 `;
 
 export const ProjectsContainer = styled.div`
-    width: 60vw;    
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: ${px2vw(40)};
 `;
 
 export const ProjectsRow = styled.div`
@@ -39,9 +43,18 @@ export const ProjectsRow = styled.div`
 
 export const Project = styled.div`
     background: url('${props => props.image}');
+    background-size: cover;
     width: 30vw;
-    height: 30vw;
-    margin: 0;
+    height: 20vw;
+    margin-right: 1px;
+    border-style: solid;
     padding: 0;
+    transition: 0.2s;
+
+
+    &:hover {
+        cursor: pointer;
+        border-color: white;
+    }
 `;
 
