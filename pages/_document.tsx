@@ -4,6 +4,7 @@ export default class MyDocument extends Document {
     render() {
         return (
             <Html>
+                <title>Portfólio - Rafael Eduardo Kepler</title>
                 <Head>
                     <link rel="shortcut icon" href="favicon.png" type="image/png" />
 

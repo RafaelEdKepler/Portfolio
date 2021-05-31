@@ -10,10 +10,10 @@ const Header = () => {
             </NameContainer>
             <InfoContainer>
                 <InfoLinks><u>Início</u></InfoLinks>
-                <InfoLinks>Contato</InfoLinks>
-                <GitHubButton>GitHub</GitHubButton>
+                <InfoLinks onClick={() => window.scroll(0, 10000)}>Contato</InfoLinks>
+                <GitHubButton onClick={() => window.open('https://github.com/RafaelEdKepler/', '_blank')}>GitHub</GitHubButton>
             </InfoContainer>
-        </Container>
+        </Container >
     )
 }
 
