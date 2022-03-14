@@ -1,6 +1,7 @@
 import React from "react";
+import { FaTwitterSquare, FaLinkedin, FaInstagramSquare, FaFacebookSquare } from "react-icons/fa";
 
-import { Container, ColumnContainer, Info, TitleColumn, Icon, Link, LinkContainer } from './style';
+import { Container, ColumnContainer, Info, TitleColumn, Link, LinkContainer } from './style';
 
 const Footer = () => {
     return (
@@ -19,19 +20,19 @@ const Footer = () => {
             <ColumnContainer>
                 <TitleColumn>Siga-me</TitleColumn>
                 <LinkContainer>
-                    <Icon src="./twitter.png" />
+                    <FaTwitterSquare/>
                     <Link href="https://twitter.com/KeplerEdRafael">Twitter</Link>
                 </LinkContainer>
                 <LinkContainer>
-                    <Icon src="./linkedin.png" />
+                    <FaLinkedin/>
                     <Link href="http://www.linkedin.com/in/RafaelEdKepler">Linkedin</Link>
                 </LinkContainer>
                 <LinkContainer>
-                    <Icon src="./instagram.jpg" />
+                    <FaInstagramSquare/>
                     <Link href="https://www.instagram.com/kepleredrafael/">Instagram</Link>
                 </LinkContainer>
                 <LinkContainer>
-                    <Icon src="./facebook.png" />
+                    <FaFacebookSquare/>
                     <Link href="https://www.facebook.com/Kepler.Ed.Rafael/">Facebook</Link>
                 </LinkContainer>
             </ColumnContainer>

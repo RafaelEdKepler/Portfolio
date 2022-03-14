@@ -25,6 +25,11 @@ export const InfoContainer = styled.div`
 export const Name = styled.span`
     font-size: 1.2rem;
     color: white;
+
+    b {
+        font-family: 'Sacramento' !important;
+        font-size: 2rem;
+    }
 `;
 
 export const InfoLinks = styled.a`

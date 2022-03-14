@@ -16,10 +16,8 @@ export const Container = styled.div`
           rgba(0, 0, 0, 0.7),
           rgba(0, 0, 0, 0.7)
         ),
-        url(https://cio.com.br/wp-content/uploads/2019/11/shutterstock_1445888471.jpg);
-        background-size: cover;
-    }
-
+        url('./header.jpg');
+    background-size: cover;
 `;
 
 export const Name = styled.h1`

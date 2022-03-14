@@ -1,4 +1,5 @@
 import React from "react";
+import AboutMe from "../AboutMe";
 
 import { Container, TitleContainer, Title, SubTitle, ProjectsContainer, ProjectsRow, Project } from "./style";
 
@@ -21,6 +22,7 @@ const Portfolio = () => {
 
     return (
         <Container>
+            <AboutMe/>
             <TitleContainer>
                 <Title>Portfólio</Title>
                 <SubTitle>Projetos desenvolvidos por mim.</SubTitle>

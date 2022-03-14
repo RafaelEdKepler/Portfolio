@@ -46,7 +46,7 @@ export const Project = styled.div`
     background-size: cover;
     width: 30vw;
     height: 20vw;
-    margin-right: 1px;
+    margin: 1rem 0;
     border-style: solid;
     padding: 0;
     transition: 0.2s;
@@ -55,6 +55,10 @@ export const Project = styled.div`
     &:hover {
         cursor: pointer;
         border-color: white;
+    }
+
+    &:first-child {
+        margin-right: 1rem;
     }
 `;
 

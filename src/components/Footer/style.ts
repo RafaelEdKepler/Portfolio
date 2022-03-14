@@ -33,10 +33,10 @@ export const Link = styled.a`
 export const LinkContainer = styled.div`
     display: flex;
     justify-content: left;
+    align-items: center;
     margin: ${px2vw(15)} 0 ${px2vw(5)} 0;
-`;
 
-export const Icon = styled.img`
-    width: ${px2vw(20)};
-    height: ${px2vw(20)};
+    svg {
+        margin-right: 0.5rem;
+    }
 `;
